@@ -1,0 +1,1629 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#"
+     xml:base="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-87="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#belongs_to -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#belongs_to">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Account"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Admin"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Customer"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#has_account -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#has_account">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Admin"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Customer"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Account"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#has_flavour -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#has_flavour">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#chocolate"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#fruity"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#hazelnut"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#honey"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#malai"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#milk"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#vanila"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#has_spicelevel -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#has_spicelevel">
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#less"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#medium"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#spicy"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#veryless"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#veryspicy"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#is_madeof -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#is_madeof">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#admin_password -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#admin_password">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Admin_account"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#admin_username -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#admin_username">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Admin_account"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#customer_password -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#customer_password">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#customer_login"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#customer_username -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#customer_username">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#customer_login"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#email_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#email_id">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#customer_signin"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#first_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#first_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#customer_signin"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#last_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#last_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#customer_signin"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#main_ingredient -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#main_ingredient">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#name">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Cooldrinks"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Hotdrinks"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Spirits"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#password -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#password">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#customer_signin"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#size -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#size">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#spicelevel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#spicelevel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Food"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Account -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Account"/>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Admin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Admin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Admin_account -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Admin_account">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Account"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Biryani -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Biryani">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Mains"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Burfi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Burfi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Sweets"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Cake -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Cake">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Desserts"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Coffee -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Coffee">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Hotdrinks"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Cooldrinks -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Cooldrinks">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Drinks"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Curry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Curry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Mains"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Customer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Customer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Customer_account -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Customer_account">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Account"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Dal_curry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Dal_curry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Veg_curry"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Desserts -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Desserts">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Drinks -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Drinks"/>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Flavour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Flavour"/>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Food -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Food"/>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Fried_rice -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Fried_rice">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Mains"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Halwa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Halwa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Sweets"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Hotdrinks -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Hotdrinks">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Drinks"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Icecream -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Icecream">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Desserts"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Laddu -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Laddu">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Sweets"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Mains -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Mains">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Naan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Naan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Sides"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Nonveg_biryani -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Nonveg_biryani">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Biryani"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Nonveg_curry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Nonveg_curry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Curry"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Nonveg_starters -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Nonveg_starters">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Starters"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Panner_curry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Panner_curry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Veg_curry"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Paratha -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Paratha">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Sides"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Puddings -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Puddings">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Desserts"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Raita -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Raita">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Sides"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Rice -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Rice">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Sides"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Rice_special -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Rice_special">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Mains"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Salad -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Salad">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Sides"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Sides -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Sides">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Spicelevel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Spicelevel"/>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Spirits -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Spirits">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Drinks"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Starters -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Starters">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Sweets -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Sweets">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Tandoori_special -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Tandoori_special">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Mains"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Tea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Tea">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Hotdrinks"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Veg_Biryani -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Veg_Biryani">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Biryani"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Veg_curry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Veg_curry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Curry"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Veg_starters -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Veg_starters">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Starters"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#admin_login -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#admin_login">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Admin_account"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#chaat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#chaat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Veg_starters"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#chocolate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#chocolate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Flavour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#customer_login -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#customer_login">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Customer_account"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#customer_signin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#customer_signin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Customer_account"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#fruity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#fruity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Flavour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#hazelnut -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#hazelnut">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Flavour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#honey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#honey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Flavour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#less -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#less">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Spicelevel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#malai -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#malai">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Flavour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#medium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#medium">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Spicelevel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#milk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#milk">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Flavour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#samosa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#samosa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Veg_starters"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#spicy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#spicy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Spicelevel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#vanila -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#vanila">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Flavour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#veryless -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#veryless">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Spicelevel"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#veryspicy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#veryspicy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Spicelevel"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Aloo_biryani -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Aloo_biryani">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Veg_Biryani"/>
+        <main_ingredient>aloo</main_ingredient>
+        <size>small</size>
+        <spicelevel>very spicy</spicelevel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Aubergine_raita -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Aubergine_raita">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Raita"/>
+        <main_ingredient>Brinjal</main_ingredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Basmati_rice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Basmati_rice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Rice"/>
+        <main_ingredient>steam cooked basmati rice</main_ingredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Beer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Beer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Spirits"/>
+        <size>Medium</size>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Burfi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Burfi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Sweets"/>
+        <has_flavour rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Vanilla"/>
+        <main_ingredient>Milk</main_ingredient>
+        <name>Vanilla burfi</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Butter_naan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Butter_naan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Naan"/>
+        <main_ingredient>Butter</main_ingredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Butter_pudding -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Butter_pudding">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Puddings"/>
+        <has_flavour rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Milk"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Cake -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Cake">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Desserts"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Carrot_pudding -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Carrot_pudding">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Puddings"/>
+        <has_flavour rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#chocolate"/>
+        <name>Chocolate carrot pudding</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Cashewnut_halwa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Cashewnut_halwa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Sweets"/>
+        <has_flavour rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Milk"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Chaat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Chaat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Veg_starters"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Chana_masala -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Chana_masala">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Veg_curry"/>
+        <main_ingredient>Chana</main_ingredient>
+        <name>Spicy Chana Masala</name>
+        <spicelevel>medium</spicelevel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Cheese_naan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Cheese_naan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Naan"/>
+        <main_ingredient>Cheese</main_ingredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Chicken_biryani -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Chicken_biryani">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Nonveg_biryani"/>
+        <main_ingredient>Chicken</main_ingredient>
+        <spicelevel>Spicy</spicelevel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Chicken_curry -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Chicken_curry">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Nonveg_curry"/>
+        <main_ingredient>Chicken</main_ingredient>
+        <name>Nilgiri chicken kurma</name>
+        <size>Very spicy</size>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Chicken_friedrice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Chicken_friedrice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Fried_rice"/>
+        <main_ingredient>Chicken</main_ingredient>
+        <name>Baked chicken fried rice</name>
+        <spicelevel>very less</spicelevel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Chilli_panner -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Chilli_panner">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Veg_starters"/>
+        <spicelevel>less</spicelevel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Chocolate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Chocolate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Flavour"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Chocolate_burfi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Chocolate_burfi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Burfi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Chocolate_cake -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Chocolate_cake">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Cake"/>
+        <has_flavour rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Chocolate"/>
+        <name>Creamy chocolate cake</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Coffee -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Coffee">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Hotdrinks"/>
+        <has_flavour rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#chocolate"/>
+        <name>Cappuccino</name>
+        <size>small</size>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Coffee1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Coffee1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Hotdrinks"/>
+        <name>Cafe Latte</name>
+        <size>medium</size>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Coffee2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Coffee2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Hotdrinks"/>
+        <name>Cafe Mocha</name>
+        <size>large</size>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Cooldrinks -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Cooldrinks">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Drinks"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Cucumber_raita -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Cucumber_raita">
+        <main_ingredient>Cucumber</main_ingredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Curry -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Curry">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Mains"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Dal_curry -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Dal_curry">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Veg_curry"/>
+        <name>Tadka dal curry</name>
+        <spicelevel>Very less</spicelevel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Desserts -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Desserts">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Food"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Drinks -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Drinks"/>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Dryfruits_halwa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Dryfruits_halwa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Sweets"/>
+        <has_flavour rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Fruity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Egg_friedrice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Egg_friedrice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Fried_rice"/>
+        <main_ingredient>Egg</main_ingredient>
+        <spicelevel>spicy</spicelevel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Fish_curry -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Fish_curry">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Nonveg_curry"/>
+        <main_ingredient>Nellore fish curry</main_ingredient>
+        <spicelevel>less</spicelevel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Flavour -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Flavour"/>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Food -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Food"/>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Fried_rice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Fried_rice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Mains"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Fruit_cake -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Fruit_cake">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Cake"/>
+        <has_flavour rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Fruity"/>
+        <name>Mixed fruit cake</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Fruit_salad -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Fruit_salad">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Salad"/>
+        <main_ingredient>Fruits</main_ingredient>
+        <name>Healthy fruit salad</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Fruity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Fruity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Flavour"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Garlic_naan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Garlic_naan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Naan"/>
+        <name>Garlic coriander naan</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Halwa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Halwa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Sweets"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Honey -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Honey">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Flavour"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Hotdrinks -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Hotdrinks">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Drinks"/>
+        <belongs_to rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Drinks"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Icecream -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Icecream">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Desserts"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Jeera_rice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Jeera_rice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Rice_special"/>
+        <main_ingredient>Jeera</main_ingredient>
+        <name>Yellow jeera rice</name>
+        <spicelevel>Medium</spicelevel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Kachumber_salad -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Kachumber_salad">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Salad"/>
+        <main_ingredient>cucumber,onion,tomato</main_ingredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Kale_chaat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Kale_chaat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#chaat"/>
+        <main_ingredient>cripsy kale chaat</main_ingredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Kashmiri_murgh -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Kashmiri_murgh">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Nonveg_starters"/>
+        <spicelevel>Spicy</spicelevel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Laccha__paratha -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Laccha__paratha">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Paratha"/>
+        <main_ingredient>Wheat flour</main_ingredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Laddu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Laddu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Sweets"/>
+        <has_flavour rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Fruity"/>
+        <name>Yellow dry fruit laddoo</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Lamb_biryani -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Lamb_biryani">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Nonveg_biryani"/>
+        <main_ingredient>Lamb</main_ingredient>
+        <spicelevel>spicy</spicelevel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Lamb_chops -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Lamb_chops">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Nonveg_starters"/>
+        <main_ingredient>Lamb</main_ingredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Lemonade -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Lemonade">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Cooldrinks"/>
+        <size>large</size>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Mains -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Mains">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Food"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Malabar_paratha -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Malabar_paratha">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Paratha"/>
+        <main_ingredient>Layered malabar paratha</main_ingredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Mango_icecream -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Mango_icecream">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Icecream"/>
+        <has_flavour rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Milk"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Mangolassi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Mangolassi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Cooldrinks"/>
+        <has_flavour rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#chocolate"/>
+        <size>small</size>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Milk -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Milk">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Flavour"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Mushroom_friedrice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Mushroom_friedrice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Fried_rice"/>
+        <main_ingredient>Mushroom</main_ingredient>
+        <name>schezwan fried rice</name>
+        <spicelevel>Less</spicelevel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Mushroom_rice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Mushroom_rice">
+        <main_ingredient>Mushroom</main_ingredient>
+        <name>Cooked mushroom rice</name>
+        <spicelevel>spicy</spicelevel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Naan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Naan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Naan"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Nonveg_biryani -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Nonveg_biryani">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Biryani"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Nonveg_curry -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Nonveg_curry">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Curry"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Nonveg_starters -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Nonveg_starters">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Starters"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Orangejuice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Orangejuice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Cooldrinks"/>
+        <size>small</size>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Panner_biryani -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Panner_biryani">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Veg_Biryani"/>
+        <main_ingredient>Panner</main_ingredient>
+        <spicelevel>Medium</spicelevel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Panner_curry -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Panner_curry">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Veg_curry"/>
+        <name>palak panner curry</name>
+        <spicelevel>less spicy</spicelevel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Paratha -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Paratha">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Sides"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Pasta_salad -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Pasta_salad">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Salad"/>
+        <main_ingredient>pasta</main_ingredient>
+        <name>Creamy vegan pasta salad</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Pista -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Pista">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Flavour"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Pista_burfi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Pista_burfi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Burfi"/>
+        <has_flavour rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Pista"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Pista_icecream -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Pista_icecream">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Icecream"/>
+        <has_flavour rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Pista"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Prawn_biryani -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Prawn_biryani">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Nonveg_biryani"/>
+        <main_ingredient>Prawns</main_ingredient>
+        <spicelevel>veryless</spicelevel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Puddings -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Puddings">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Desserts"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Pulao_rice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Pulao_rice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Rice_special"/>
+        <main_ingredient>Vegetables</main_ingredient>
+        <name>Saffron pulao rice</name>
+        <spicelevel>medium</spicelevel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Raita -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Raita">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Sides"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Rice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Rice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Sides"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Rice_special -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Rice_special">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Mains"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Salad -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Salad">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Sides"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Samosa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Samosa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Veg_starters"/>
+        <main_ingredient>potato</main_ingredient>
+        <name>Aloo samosa</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Samosa_chaat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Samosa_chaat">
+        <main_ingredient>spicy samosa chaat</main_ingredient>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Sides -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Sides">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Food"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Spirits -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Spirits">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Drinks"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Starters -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Starters">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Food"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Sweets -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Sweets">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Food"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Tea -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Tea">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Hotdrinks"/>
+        <name>GreenTea</name>
+        <size>small</size>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Tea1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Tea1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Hotdrinks"/>
+        <name>BlackTea</name>
+        <size>large</size>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Tea2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Tea2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Hotdrinks"/>
+        <name>MasalaTea</name>
+        <size>large</size>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Tikkamasala_curry -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Tikkamasala_curry">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Nonveg_curry"/>
+        <main_ingredient>Chicken thighs</main_ingredient>
+        <name>Murgh tikka masala</name>
+        <spicelevel>very less</spicelevel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Vanilla -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Vanilla">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Flavour"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Vanilla_cake -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Vanilla_cake">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Cake"/>
+        <has_flavour rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Vanilla"/>
+        <name>Cheese Vanilla cake</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Vanilla_icecream -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Vanilla_icecream">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Icecream"/>
+        <has_flavour rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Vanilla"/>
+        <name>Chocochip vanilla icecream</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Veg_Biryani -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Veg_Biryani">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Biryani"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Veg_curry -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Veg_curry">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Curry"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Veg_starters -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Veg_starters">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Starters"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Vegatable_rice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Vegatable_rice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Rice"/>
+        <main_ingredient>vegetables</main_ingredient>
+        <name>Pot vegetable rice</name>
+        <spicelevel>very spicy</spicelevel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#chocolate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#chocolate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Flavour"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#coke -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#coke">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Cooldrinks"/>
+        <size>medium</size>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#gin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#gin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Spirits"/>
+        <size>medium</size>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#wine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#wine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Spirits"/>
+        <size>small</size>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Chicken_50/60 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Chicken_50/60">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2020/11/untitled-ontology-87#Nonveg_starters"/>
+        <spicelevel>medium</spicelevel>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
